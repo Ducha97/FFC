@@ -1,6 +1,6 @@
 </div>
 <!--end-main-wrapper-->
-<footer id="footer" class="footer">
+<footer id="footer" class="footer"  style="display: none">
     <div class="footer-inner">
         <div class="container">
             <div class="main-footer">

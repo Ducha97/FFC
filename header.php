@@ -19,7 +19,7 @@
 
 <body>
     <div id="main-wrapper">
-        <header id="header">
+        <header id="header" style="display: none">
             <div class="header-inner">
                 <div class="header-top">
                     <div class="container">
@@ -76,28 +76,205 @@
                         <div class="main-menu">
                             <div class="main-menu__inner">
                                 <ul>
-                                    <li>
+                                    <li class="link-main">
                                         <a href="#!">
                                             <img src="dist/images/main-menu.svg" alt="main-menu">
                                             <span>Danh Mục sản phẩm</span>
                                         </a>
+                                        <div class="vertical-menu">
+                                            <div class="row row-0">
+                                                <div class="col-4 p-0">
+                                                    <div class="vertical-menu__left">
+                                                        <ul>
+                                                            <li class="vertical-sub" id="lv-1">
+                                                                <a href="#">Đồ điện tử</a>
+                                                                <i class="fal fa-angle-right"></i>
+                                                            </li>
+                                                            <li class="vertical-sub" id="lv-2">
+                                                                <a href="#">Đồ nội thất</a>
+                                                                <i class="fal fa-angle-right"></i>
+                                                            </li>
+                                                            <li class="vertical-sub" id="lv-3">
+                                                                <a href="#">Đồ gia dụng</a>
+                                                                <i class="fal fa-angle-right"></i>
+                                                            </li>
+                                                            <li class="vertical-sub" id="lv-4">
+                                                                <a href="#">Đồ kỹ thuật</a>
+                                                                <i class="fal fa-angle-right"></i>
+                                                            </li>
+                                                            <li class="vertical-sub" id="lv-5">
+                                                                <a href="#">Mỹ phẩm</a>
+                                                                <i class="fal fa-angle-right"></i>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="col-8 p-0">
+                                                    <div tab-index="lv-1" class="vertical-menu__right">
+                                                        <h2>Danh sách đồ điện tử</h2>
+                                                        <div class="menu-right-list">
+                                                            <div class="row">
+                                                                <div class="col-md-6">
+                                                                    <div class="list-item">
+                                                                        <ul>
+                                                                            <li><a href="#">Máy tính</a></li>
+                                                                            <li><a href="#">Điện thoại</a></li>
+                                                                            <li><a href="#">Tivi</a></li>
+                                                                            <li><a href="#">Điều hòa</a></li>
+                                                                            <li><a href="#">Máy giặt</a></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <div class="list-item">
+                                                                        <ul>
+                                                                            <li><a href="#">Máy tính</a></li>
+                                                                            <li><a href="#">Điện thoại</a></li>
+                                                                            <li><a href="#">Tivi</a></li>
+                                                                            <li><a href="#">Điều hòa</a></li>
+                                                                            <li><a href="#">Máy giặt</a></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div tab-index="lv-2" class="vertical-menu__right">
+                                                        <h2>Danh sách đồ công nghệ</h2>
+                                                        <div class="menu-right-list">
+                                                            <div class="row">
+                                                                <div class="col-md-6">
+                                                                    <div class="list-item">
+                                                                        <ul>
+                                                                            <li><a href="#">Máy tính</a></li>
+                                                                            <li><a href="#">Điện thoại</a></li>
+                                                                            <li><a href="#">Tivi</a></li>
+                                                                            <li><a href="#">Điều hòa</a></li>
+                                                                            <li><a href="#">Máy giặt</a></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <div class="list-item">
+                                                                        <ul>
+                                                                            <li><a href="#">Máy tính</a></li>
+                                                                            <li><a href="#">Điện thoại</a></li>
+                                                                            <li><a href="#">Tivi</a></li>
+                                                                            <li><a href="#">Điều hòa</a></li>
+                                                                            <li><a href="#">Máy giặt</a></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div tab-index="lv-3" class="vertical-menu__right">
+                                                        <h2>Danh sách đồ da dụng</h2>
+                                                        <div class="menu-right-list">
+                                                            <div class="row">
+                                                                <div class="col-md-6">
+                                                                    <div class="list-item">
+                                                                        <ul>
+                                                                            <li><a href="#">Máy tính</a></li>
+                                                                            <li><a href="#">Điện thoại</a></li>
+                                                                            <li><a href="#">Tivi</a></li>
+                                                                            <li><a href="#">Điều hòa</a></li>
+                                                                            <li><a href="#">Máy giặt</a></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <div class="list-item">
+                                                                        <ul>
+                                                                            <li><a href="#">Máy tính</a></li>
+                                                                            <li><a href="#">Điện thoại</a></li>
+                                                                            <li><a href="#">Tivi</a></li>
+                                                                            <li><a href="#">Điều hòa</a></li>
+                                                                            <li><a href="#">Máy giặt</a></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div tab-index="lv-4" class="vertical-menu__right">
+                                                        <h2>Danh sách đồ mỹ phẩm</h2>
+                                                        <div class="menu-right-list">
+                                                            <div class="row">
+                                                                <div class="col-md-6">
+                                                                    <div class="list-item">
+                                                                        <ul>
+                                                                            <li><a href="#">Máy tính</a></li>
+                                                                            <li><a href="#">Điện thoại</a></li>
+                                                                            <li><a href="#">Tivi</a></li>
+                                                                            <li><a href="#">Điều hòa</a></li>
+                                                                            <li><a href="#">Máy giặt</a></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <div class="list-item">
+                                                                        <ul>
+                                                                            <li><a href="#">Máy tính</a></li>
+                                                                            <li><a href="#">Điện thoại</a></li>
+                                                                            <li><a href="#">Tivi</a></li>
+                                                                            <li><a href="#">Điều hòa</a></li>
+                                                                            <li><a href="#">Máy giặt</a></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div tab-index="lv-5" class="vertical-menu__right">
+                                                        <h2>Danh sách đồ cá nhân</h2>
+                                                        <div class="menu-right-list">
+                                                            <div class="row">
+                                                                <div class="col-md-6">
+                                                                    <div class="list-item">
+                                                                        <ul>
+                                                                            <li><a href="#">Máy tính</a></li>
+                                                                            <li><a href="#">Điện thoại</a></li>
+                                                                            <li><a href="#">Tivi</a></li>
+                                                                            <li><a href="#">Điều hòa</a></li>
+                                                                            <li><a href="#">Máy giặt</a></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <div class="list-item">
+                                                                        <ul>
+                                                                            <li><a href="#">Máy tính</a></li>
+                                                                            <li><a href="#">Điện thoại</a></li>
+                                                                            <li><a href="#">Tivi</a></li>
+                                                                            <li><a href="#">Điều hòa</a></li>
+                                                                            <li><a href="#">Máy giặt</a></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </li>
-                                    <li>
+                                    <li class="link-main">
                                         <a href="#!">
                                             <span>Giới thiệu</span>
                                         </a>
                                     </li>
-                                    <li>
+                                    <li class="link-main">
                                         <a href="#!">
                                             <span>Săn deal</span>
                                         </a>
                                     </li>
-                                    <li>
+                                    <li class="link-main">
                                         <a href="#!">
                                             <span>Tin tức</span>
                                         </a>
                                     </li>
-                                    <li>
+                                    <li class="link-main">
                                         <a href="#!">
                                             <span>Hỗ trợ 24/7</span>
                                         </a>

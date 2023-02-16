@@ -6,7 +6,7 @@
         </figure>
     </div>
     <div class="ffc-login__content">
-    <div class="conatiner">
+    <div class="container">
             <div class="ffc-login__form">
                 <form action="login">
                     <div class="form-login">

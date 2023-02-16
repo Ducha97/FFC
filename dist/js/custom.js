@@ -121,7 +121,7 @@ jQuery(document).ready(function ($) {
     var accToggles = document.getElementsByClassName('title-tab');
     var tabClick = function (el) {
         var targetParent = el.target.closest('.item-tab');
-      Array.prototype.forEach.call(accToggles, function (tog) {
+        Array.prototype.forEach.call(accToggles, function (tog) {
             var tabParent = tog.closest('.item-tab');
             if (tabParent != targetParent) {
                 tabParent.classList.remove('showww');
@@ -136,11 +136,40 @@ jQuery(document).ready(function ($) {
 });
 jQuery(document).ready(function () {
     jQuery('.notifi-nolg').on('click', function (e) {
-		e.preventDefault();
-		jQuery('.drop-notifi').addClass('show-notifi');
-	});
+        e.preventDefault();
+        jQuery('.drop-notifi').addClass('show-notifi');
+    });
     jQuery('.close-notifi').on('click', function (e) {
-		e.preventDefault();
-		jQuery('.drop-notifi').removeClass('show-notifi');
-	});
+        e.preventDefault();
+        jQuery('.drop-notifi').removeClass('show-notifi');
+    });
+});
+jQuery(document).ready(function () {
+    jQuery('.notifi-lg').on('click', function (e) {
+        e.preventDefault();
+        jQuery('.drop-list-notifi').addClass('show-notification');
+    });
+    jQuery(document).click(function (e) {
+        var search = jQuery('.notifi-lg, .drop-list-notifi');
+        if (!search.is(e.target) && search.has(e.target).length === 0) {
+            search.removeClass('show-notification');
+        }
+    });
+});
+jQuery(document).ready(function () {
+    $('.vertical-menu').each(function () {
+        var item = $(this).find('.vertical-sub'),
+            content_tab = $(this).find('.vertical-menu__right');
+            content_tab.hide();
+            content_tab.first().show();
+            item.mouseenter(function () {
+            var that = $(this),
+                index = that.attr('id');
+            that.addClass('hover-link');
+            that.siblings().removeClass('hover-link');
+            content_tab.hide();
+            $(`[tab-index="${index}"]`).show();
+        }).mouseleave(function () {
+        });
+    })
 });
