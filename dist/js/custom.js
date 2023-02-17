@@ -14,6 +14,20 @@ jQuery(document).ready(function () {
         slidesPerView: 6,
         paginationClickable: true,
         spaceBetween: 20,
+        breakpoints: {
+            1200: {
+                slidesPerView: 6,
+                spaceBetween: 20
+            },
+            767: {
+                slidesPerView: 4,
+                spaceBetween: 20
+            },
+            0: {
+                slidesPerView: 2,
+                spaceBetween: 10
+            }
+        }
     });
     new Swiper('.slide-brand', {
         loop: true,
@@ -22,6 +36,20 @@ jQuery(document).ready(function () {
         slidesPerView: 7,
         paginationClickable: true,
         spaceBetween: 0,
+        breakpoints: {
+            1200: {
+                slidesPerView: 7,
+                spaceBetween: 0,
+            },
+            767: {
+                slidesPerView: 4,
+                spaceBetween: 0,
+            },
+            0: {
+                slidesPerView: 2,
+                spaceBetween: 0,
+            }
+        }
     });
     new Swiper('.swiper-relate', {
         loop: true,
@@ -160,9 +188,9 @@ jQuery(document).ready(function () {
     $('.vertical-menu').each(function () {
         var item = $(this).find('.vertical-sub'),
             content_tab = $(this).find('.vertical-menu__right');
-            content_tab.hide();
-            content_tab.first().show();
-            item.mouseenter(function () {
+        content_tab.hide();
+        content_tab.first().show();
+        item.mouseenter(function () {
             var that = $(this),
                 index = that.attr('id');
             that.addClass('hover-link');

@@ -1,13 +1,13 @@
 <?php include "header.php"; ?>
 <section class="ffc-404">
     <div class="container">
-        <div class="row">
-            <div class="col-md-6">
+        <div class="row 404page">
+            <div class="col-lg-6 p404-2">
                 <div class="ffc-404__img">
                     <figure><img src="dist/images/404.png" alt=""></figure>
                 </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-lg-6 p404-1">
                 <div class="ffc-404__text">
                     <h1>404!</h1>
                     <h2>Không tìm thấy trang bạn yêu cầu</h2>
