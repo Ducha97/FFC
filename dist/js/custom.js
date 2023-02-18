@@ -99,6 +99,15 @@ jQuery(document).ready(function () {
             autoplaySpeed: 3000,
             arrows: false,
             dots: false,
+            responsive: [
+                {
+                  breakpoint: 767,
+                  settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                  }
+                }
+              ]
         });
     }
     if (jQuery('.advise-list__item').length) {
